@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-div {
+    height: 100vh !important;
+    width: 100%;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.req-quote-navitem a {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.banner-div .inner-content h1 {
+    font-size: 50px;
+}
+
+.header-main-section {
+    background-color: #ffeb5c;
+}
+
+.header-main-section {
+    border-bottom: 5px solid red;
+}
+
+.upper-header ul {
+    padding-right: 8px;
+    /* gap: 10px !important; */
+}
+
+.banner-div {
+    width: 100%;
+    height: auto;
+}
+
+
+.Product-name-title {
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.product-description-para {
+    font-weight: 400 !important;
+    font-size: 17px;
+    line-height: 20px;
+    color: grey;
+}
+
+.dulu_logo {
+    position: absolute;
+    bottom: -30%;
+    width: 211px;
+}
+
+.second-banner-container {
+    width: 100%;
+    height: 70vh;
+}
+
+.second-banner-container img {
+    object-fit: cover;
+}
+
+.about-container {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(#ffec5cb9), url("./images/About_us_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us-heading {
+    top: -5%;
+    /* background-color: rgb(241, 241, 124); */
+    width: 25%;
+    text-align: left;
+    border-radius: 50px 0 0 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    background-color: #ffeb5c;
+}
+
+.about-us-heading h4 {
+    font-size: 30px;
+}
+
+
+/*  */
+
+.product-img-main-container {
+    position: relative;
+    
+}
+
+.packet-container {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-40%, -21%);
+    
+}
+
+.product-img-main-container:hover .packet-container{
+   animation: floatUpDown 2s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+    0%   { transform: translate(-40%, -21%); }
+    50%  { transform: translate(-40%, -26%); }  /* Move up by 5% */
+    100% { transform: translate(-40%, -21%); }
+  }
+
+.pouch-1 {
+    width: 33%;
+}
+
+.pouch-2 {
+    width:43%;
+}
+
+.bottle-1 {
+    width: 14%;
+}
+
+.bottle-2 {
+    width: 25%;
+}
+
+.bottle-3 {
+    width: 19%;
+}
+
+.bottle-container {
+    position: absolute;
+    bottom: 29%;
+    left: 36%;
+    transform: translate(0%, 1%);
+}
+
+.product-img-main-container:hover .bottle-container{
+    animation: floatUpDown1 2s ease-in-out infinite;
+}
+
+@keyframes floatUpDown1 {
+    0%   { transform: translate(0%, 1%); }
+    50%  { transform: translate(0%, -4%); }  /* Move up by 5% */
+    100% { transform: translate(0%, 1%); }
+  }
+
+.tin-container-1 {
+    position: absolute;
+    top: 46%;
+    left: 31%;
+    /* transition: transform 0.3s ease; */
+}
+
+.tin-container-2 {
+    position: absolute;
+    top: 55%;
+    left: 41%;
+    /* transition: transform 0.3s ease; */
+}
+
+.tin-1 {
+    width: 22%;
+}
+
+.tin-2 {
+    width: 23%;
+}
+
+.tin-3 {
+    width: 21%;
+}
+
+.tin-4 {
+    width: 16%;
+}
+
+
+.product-img-main-container:hover .tin-container-1 ,.product-img-main-container:hover .tin-container-2
+{
+    animation: floatTin 2s ease-in-out infinite;
+}
+
+
+@keyframes floatTin {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8%); } /* Goes UP */
+    100% { transform: translateY(0); }
+}
+
+.underline {
+    border: 2px solid grey;
+    border-radius: 50%;
+    width: 60%;
+}
+
+footer {
+    background-color: #d0ffab;
+}
+
+.banner-border {
+    background-color: #ffeb5c;
+}
+
+.product-quantity{
+    font-family: "Exo", sans-serif;
+}
+
+
+.about-us-para{
+color: grey;
+line-height: 22px;
+font-size: 18px;
+}
+
+.know-more-btn{
+    background-color: #ffeb5c;
+    border-radius: 40px;
+}
+
+
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .dulu_logo{
+        width: 130px;
+    }
+
+    .product-detail-title h3{
+        font-size: 14px;
+    }
+
+    .product-description-para{
+        text-align: justify;
+    }
+
+
+    .about-us-heading{
+        top: -2%;
+        width: 50%;
+    }
+
+    .second-banner-container{
+        object-fit: contain;
+        height: auto;
+    }
+
+    .underline{
+        width: 90%;
+    }
+
+    .navbar-nav{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        background-color: #ffeb5c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in-out ;
+    }
+
+    #close-navbar{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .active-navbar{
+        left: 0;
+    }
+}
